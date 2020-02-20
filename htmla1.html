@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Stock Trading</title>
+<head>
+
+</head>
+<body>
+<table align="center" border="1">
+<tr>
+   <td>
+	<b><label for="sy">TICKER:</label></b>
+   </td>
+   <td>
+	<label for="sys">PRICE:</label>
+   </td>
+</tr>
+<tr>
+   <td>
+	<label for="wipro">WIPRO</label>
+   </td>
+   <td>
+	<label for="price1">298.45</label>
+   </td>
+</tr>
+<tr>
+   <td>
+	<label for="infy">INFY</label>
+   </td>
+   <td>
+	<label for="price2">949.95</label>
+   </td>
+</tr>
+<tr>
+   <td>
+	<label for="tcs">TCS</label>
+   </td>
+   <td>
+	<label for="price3">2713.70</label>
+   </td>
+</tr>
+<tr>
+   <td>
+	<label for="tech">TECHM</label>
+   </td>
+   <td>
+	<label for="price4">485.85</label>
+   </td>
+</tr>
+</table>
+<br>
+<h1 align="center">Stock Trading</h1>
+<form>
+<table align="center" border="1">
+<tr>
+   <td>
+	<b><label for="sy">Ticker:</label></b>
+   </td>
+   <td>
+	<input list="companies" name="company">
+	<datalist id="companies">
+	<option  value="WIPRO"></option>
+	<option  value="INFY"></option>
+	<option  value="TCS"></option>
+	<option  value="TECHM"></option>
+	</datalist>
+   </td>
+</tr>
+<tr>
+   <td>
+	<b><label for="sys">Quantity:</label></b>
+   </td>
+   <td>
+	<input type="number" min="10" max="100" step="10">
+   </td>
+</tr>
+<tr>
+   <td>
+	<button type="submit">Submit</button>
+   </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

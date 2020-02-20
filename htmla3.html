@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awesome Online Videos</title>
+</head>
+<style type = "text/css">
+    
+h1{
+    font-weight: bold;
+    background-color: aliceblue; 
+font-family:sans-serif;
+text-align:center;
+}
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: top;
+  width: 100%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+<body>
+<h1><img src="video-player.png" width="40" height="40" align="center"> Awesome Online Videos</h1>
+   <div class="row">
+       <div style="height: 80%;">
+  <div class="column" style="background-color:whitesmoke;">
+  <center> <video id="myVideo" width="520" height="300">
+  <source src="video.mp4" type="video/mp4">
+      </video> </center>
+  </div>
+           <div style="height: 20%;">
+  <div class="column" style="background-color:whitesmoke;" height:20%;>
+   <hr>
+<center><button onclick="playVid()" type="button">Play Video</button>
+    <button onclick="pauseVid()" type="button">Pause Video</button></center>
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+    
+  </div>
+</div>
+
+
+</body>

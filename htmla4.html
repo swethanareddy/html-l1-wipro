@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title> Cricket Batting Statitics</title>
+ <style>
+ h1{
+  font-family:sans-serif;
+  color:black;
+ }
+h2{
+font-family:sans-serif;
+}
+body{
+text-align:center;
+}
+canvas{
+ border:3px solid white;
+}
+ </style>
+</head>
+<body>
+ <h1>Board of Control for Cricket in India(BCCI)</h1>
+<h2>Batting statistics for a T20 match</h2>
+ <canvas width="380" height="380" id="cid">
+ <script>
+  var c = document.getElementById("cid");
+  var ctx = c.getContext("2d");
+  ctx.strokeStyle = "black";
+  ctx.moveTo(35,35);
+  ctx.lineTo(35,330);
+  ctx.lineTo(330,330);
+  ctx.stroke();
+ 
+  ctx.strokeText("5",85,350);
+  ctx.strokeText("10",135,350);
+  ctx.strokeText("15",185,350);
+  ctx.strokeText("20",235,350);
+  ctx.strokeText("25",285,350);
+  ctx.strokeText("Overs",335,340);
+
+  ctx.strokeText("30",15,285);
+  ctx.strokeText("60",15,235);
+  ctx.strokeText("90",15,175);
+  ctx.strokeText("120",15,135);
+  ctx.strokeText("150",15,85);
+  ctx.strokeText("Runs",15,30);
+
+  ctx.beginPath();  
+  ctx.moveTo(36,95);
+  ctx.lineTo(330,95);
+  ctx.stroke();
+
+  ctx.moveTo(36,205);
+  ctx.lineTo(330,205);
+  ctx.stroke();
+
+  ctx.moveTo(36,265);
+  ctx.lineTo(330,265);    
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.strokeStyle="blue";
+  ctx.strokeText("40",15,268);
+  ctx.stroke();
+
+  ctx.strokeStyle="blue";
+  ctx.strokeText("75",15,208);
+  ctx.stroke();
+
+  ctx.strokeStyle="blue";
+  ctx.strokeText("140",15,98);
+  ctx.stroke();
+
+  ctx.arc(90,265,4,0,2*Math.PI);
+  ctx.fillStyle="red";
+   ctx.fill();
+   ctx.stroke();
+
+  ctx.beginPath();
+    ctx.arc(135,205,4,0,2*Math.PI);
+    ctx.fillStyle="red";
+    ctx.fill();
+    ctx.stroke();
+
+  ctx.beginPath();
+    ctx.arc(192,95,4,0,2*Math.PI);
+    ctx.fillStyle="red";
+    ctx.fill();
+    ctx.stroke();
+
+  ctx.moveTo(90,265);
+  ctx.lineTo(135,205);
+   ctx.stroke();
+
+   ctx.moveTo(135,205);
+  ctx.lineTo(192,95);
+   ctx.stroke();
+   
+ </script>
+ </canvas>
+</body>
+</html>
